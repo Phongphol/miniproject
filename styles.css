@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.current-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar-table th,
+#calendar-table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#calendar-table td {
+    cursor: pointer;
+}
+
+#calendar-table td:hover {
+    background-color: #e6e6e6;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --btn-bg-color: #007BFF;
+    --btn-text-color: #fff;
+}
+
+.dark-theme {
+    --bg-color: #333;
+    --text-color: #fff;
+    --btn-bg-color: #212529;
+    --btn-text-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    background-color: red; 
+    color: white; 
+}
